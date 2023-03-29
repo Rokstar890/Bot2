@@ -83,7 +83,7 @@ async def process_buy(bot, update):
         # send photo
         photo_url = "https://telegra.ph/file/7379a86d5621184ca3532.jpg"  # replace with your QR image URL
         await bot.send_photo(chat_id=update.message.chat.id, photo=photo_url)
-        text = "Pay 10 Ruppe and then send a screenshot of the payment below, and also provide your group ID so I can verify After Sending Verification Request."
+        text = "Pay 30 Ruppe and then send a screenshot of the payment below, and also provide your group ID so I can verify After Sending Verification Request."
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/J_shree_ram')]
         ])
