@@ -81,25 +81,25 @@ async def process_buy(bot, update):
     data = update.data.split("_")[-1]
     if data == "qr":
         # send photo
-        photo_url = "https://telegra.ph/file/55432e3caf49188dc5d30.jpg"  # replace with your QR image URL
+        photo_url = "https://telegra.ph/file/7379a86d5621184ca3532.jpg"  # replace with your QR image URL
         await bot.send_photo(chat_id=update.message.chat.id, photo=photo_url)
         text = "Pay 10 Ruppe and then send a screenshot of the payment below, and also provide your group ID so I can verify After Sending Verification Request."
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/Abdul88822')]
+            [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/J_shree_ram')]
         ])
         await bot.send_message(chat_id=update.message.chat.id, text=text, reply_markup=keyboard)
     elif data == "upi":
         # send message and button
-        text = "`sorry`\nPay 10 Ruppe and then send a screenshot of the payment below, and also provide your group ID After Sending Verification Request. can verify the payment."
+        text = "`sorry`\nPay 30 Ruppe and then send a screenshot of the payment below, and also provide your group ID After Sending Verification Request. can verify the payment."
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/Abdul88822')]
+            [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/J_shree_ram')]
         ])
         await bot.send_message(chat_id=update.message.chat.id, text=text, reply_markup=keyboard)
     elif data == "mdisk":
         # send message and button
-        text = "Send 500 Mdisk Views To `5851749250` and then send a Message To The Bot Owner."
+        text = "Send 400 Mdisk Views To `5651594253` and then send a Message To The Bot Owner."
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("Message", url=f'https://t.me/Abdul88822')]
+            [InlineKeyboardButton("Message", url=f'https://t.me/J_shree_ram')]
         ])
         await bot.send_message(chat_id=update.message.chat.id, text=text, reply_markup=keyboard)
 
@@ -115,7 +115,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url=f'https://t.me/Abdul88822')
+            InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url=f'https://t.me/J_shree_ram')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
