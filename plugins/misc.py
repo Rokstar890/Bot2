@@ -11,7 +11,7 @@ async def start(bot, message):
     await add_user(message.from_user.id, message.from_user.first_name)
     await message.reply(text=script.START.format(message.from_user.mention),
                         disable_web_page_preview=True,
-                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Buy Subscription', url=f'http://t.me/{OWNER_USERNAME}')]])
+                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Buy Subscription', url=f'http://t.me/{OWNER_USERNAME}')]]))
                                                          
    
  
