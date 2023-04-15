@@ -1,11 +1,11 @@
 class script(object):
-    START = """**Hello {} 🤟**
+    START = """**Hello {} 🤟
    
 I am Channels Filter Bot! I will filter your channel posts automatically and send it in your group chat when someone needs it..
 
-Send /help For More"""
+Send /help For More**"""
 
-    HELP = """To Use me In A Group
+    HELP = """**To Use me In A Group
 First Buy Subscription With - /buy and Then
 It Will Cost 100₹ Per Month
 
@@ -18,7 +18,7 @@ It Will Cost 100₹ Per Month
 Remove a Channel with - /disconnect-100xxxxxxxxxxx
 this will help you to remove a indexed channel from your group.
 
-Get connected channels list with - /connections"""
+Get connected channels list with - /connection**"""
 
     BUY = """How do you want to pay?"""
 
