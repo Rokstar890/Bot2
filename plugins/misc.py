@@ -90,7 +90,7 @@ async def process_buy(bot, update):
         await bot.send_message(chat_id=update.message.chat.id, text=text, reply_markup=keyboard)
     elif data == "upi":
         # send message and button
-        text = "`sorry`\nPay 100 Ruppe and then send a screenshot of the payment below, and also provide your group ID After Sending Verification Request. can verify the payment."
+        text = "`sorry`\nPay 100 Ruppe On `Pankajpandiyar@ybl` and then send a screenshot of the payment below, and also provide your group ID After Sending Verification Request. can verify the payment."
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/{OWNER_USERNAME}')]
         ])
