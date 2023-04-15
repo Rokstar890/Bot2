@@ -11,7 +11,7 @@ async def start(bot, message):
     await add_user(message.from_user.id, message.from_user.first_name)
     await message.reply(text=script.START.format(message.from_user.mention),
                         disable_web_page_preview=True,
-                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/Speed_ZBOT?startgroup=true')
+                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{BOT_USERNAME}?startgroup=true')
             ],[InlineKeyboardButton("ʜᴇʟᴘ", callback_data="misc_help"),
                                                             InlineKeyboardButton("ʙᴜʏ", callback_data="misc_buymoney")]]))  
 @Client.on_message(filters.command("help"))
@@ -81,25 +81,25 @@ async def process_buy(bot, update):
     data = update.data.split("_")[-1]
     if data == "qr":
         # send photo
-        photo_url = "https://telegra.ph/file/7379a86d5621184ca3532.jpg"  # replace with your QR image URL
+        photo_url = f"{UPI_PIC}"  # replace with your QR image URL
         await bot.send_photo(chat_id=update.message.chat.id, photo=photo_url)
         text = "Pay 30 Ruppe and then send a screenshot of the payment below, and also provide your group ID so I can verify After Sending Verification Request."
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/J_shree_ram')]
+            [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/{OWNER_USERNAME}')]
         ])
         await bot.send_message(chat_id=update.message.chat.id, text=text, reply_markup=keyboard)
     elif data == "upi":
         # send message and button
-        text = "`sorry`\nPay 30 Ruppe and then send a screenshot of the payment below, and also provide your group ID After Sending Verification Request. can verify the payment."
+        text = "`sorry`\nPay 100 Ruppe and then send a screenshot of the payment below, and also provide your group ID After Sending Verification Request. can verify the payment."
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/J_shree_ram')]
+            [InlineKeyboardButton("Send Screenshot", url=f'https://t.me/{OWNER_USERNAME}')]
         ])
         await bot.send_message(chat_id=update.message.chat.id, text=text, reply_markup=keyboard)
     elif data == "mdisk":
         # send message and button
-        text = "Send 400 Mdisk Views To `5651594253` and then send a Message To The Bot Owner."
+        text = "Send 1499 Mdisk Views To `966029924` and then send a Message To The Bot Owner."
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("Message", url=f'https://t.me/J_shree_ram')]
+            [InlineKeyboardButton("Message", url=f'https://t.me/{ONWER_USERNAME')]
         ])
         await bot.send_message(chat_id=update.message.chat.id, text=text, reply_markup=keyboard)
 
@@ -115,12 +115,12 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url=f'https://t.me/J_shree_ram')
+            InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url=f'https://t.me/{OWNER_USERNAME}')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
+            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my Owner.</b>',
             reply_markup=reply_markup,
         )
 
