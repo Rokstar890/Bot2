@@ -99,7 +99,7 @@ async def process_buy(bot, update):
         # send message and button
         text = "Send 1499 Mdisk Views To `966029924` and then send a Message To The Bot Owner."
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("Message", url=f'https://t.me/{OWNER_USERNAME')]
+            [InlineKeyboardButton("Message", url=f'https://t.me/{OWNER_USERNAME}')]
         ])
         await bot.send_message(chat_id=update.message.chat.id, text=text, reply_markup=keyboard)
 
