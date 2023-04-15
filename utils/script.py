@@ -1,16 +1,16 @@
 class script(object):
     START = """**Hello {} 🤟**
    
-I am Speedy_Z 🤖! I will filter your channel posts automatically and send it in your group chat when someone needs it..
+I am Channels Filter Bot! I will filter your channel posts automatically and send it in your group chat when someone needs it..
 
 Send /help For More"""
 
     HELP = """To Use me In A Group
 First Buy Subscription With - /buy and Then
-It Will Cost 30₹ Per Month
+It Will Cost 100₹ Per Month
 
 - Add me in your group & channel with all permissions. 
-- Send /verify in group & wait for It To Accept Or Directly Contact To Owner After Request @J_shree_ram.
+- Send /verify in group & wait for It To Accept Or Directly Contact To Owner After Request @Potter_00.
 - After verification send /connect YourChannelID
 - Example : /connect -100xxxxxxxxxx
 - Done ✅. <b><I>Enjoy 💜❤</I></b> )
